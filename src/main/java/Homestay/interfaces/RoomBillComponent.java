@@ -1,9 +1,11 @@
 package main.java.Homestay.interfaces;
 
-public interface RoomBillComponent {
-    float TAX = .125f;
-    float EXTRA_PERSON_CHARGE = 500.00f;
-    float FOOD_CHARGE = 800.00f;
+import java.math.BigDecimal;
 
-    float calculateBill();
+public interface RoomBillComponent {
+    BigDecimal TAX = BigDecimal.valueOf(.125);
+    BigDecimal EXTRA_PERSON_CHARGE = BigDecimal.valueOf(500.00);
+    BigDecimal FOOD_CHARGE = BigDecimal.valueOf(800.00);
+
+    BigDecimal calculateBill();
 }
